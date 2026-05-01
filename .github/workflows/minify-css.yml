@@ -1,0 +1,55 @@
+name: Minify CSS
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.css'
+      - '!**.min.css'
+
+permissions:
+  contents: write
+
+jobs:
+  minify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install cssnano
+        run: npm install --no-save cssnano postcss postcss-cli
+
+      - name: Minify CSS files
+        run: |
+          for file in $(find . -name "*.css" -not -name "*.min.css" -not -path "./node_modules/*"); do
+            output="${file%.css}.min.css"
+            npx postcss "$file" --use cssnano --no-map -o "$output"
+            echo "Minified $file -> $output"
+          done
+
+      - name: Commit minified files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "**/*.min.css"
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: auto-minify CSS [skip ci]"
+            git push
+          fi
+
+      - name: Purge jsDelivr cache
+        run: |
+          for file in $(find . -name "*.min.css" -not -path "./node_modules/*"); do
+            path="${file#./}"
+            url="https://purge.jsdelivr.net/gh/hmpsn/faros@main/${path}"
+            echo "Purging: $url"
+            curl -sf "$url" || echo "Purge failed for $path (non-fatal)"
+          done
