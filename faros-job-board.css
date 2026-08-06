@@ -4,33 +4,16 @@
 
 /* FONTS */
 @font-face {
-  font-family: Kmrwaldenburg;
-  src: url("https://cdn.prod.website-files.com/695be6d603b11be779b0b9a9/695bee48358d91c269e81718_kmrwaldenburg-regular.woff2") format("woff2");
-  font-weight: 400;
+  font-family: "Geist";
+  src: url("https://webflow-files-prod.global.ssl.fastly.net/695be6d603b11be779b0b9a9/fonts/6a666fdec31609791ecb27be-Geist-VariableFont_wght.woff2") format("woff2");
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: Kmrwaldenburg;
-  src: url("https://cdn.prod.website-files.com/695be6d603b11be779b0b9a9/695bee48e594f1fc1f6b799a_kmrwaldenburg-medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Kmrwaldenburg;
-  src: url("https://cdn.prod.website-files.com/695be6d603b11be779b0b9a9/695bee48e594f1fc1f6b799a_kmrwaldenburg-heavy.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Carbonot;
-  src: url("https://cdn.prod.website-files.com/695be6d603b11be779b0b9a9/695becde0f6ea15dffb291d0_CarbonOT-Bold.otf") format("opentype");
-  font-weight: 700;
+  font-family: "Geist Mono";
+  src: url("https://webflow-files-prod.global.ssl.fastly.net/695be6d603b11be779b0b9a9/fonts/6a666fdec31609791ecb27d9-GeistMono-VariableFont_wght.woff2") format("woff2");
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
@@ -45,13 +28,13 @@
   --borderRadiusContainer: 0px;
   --borderRadiusControl: 9px;
   --borderRadiusButton: 6px;
-  --fontFamily: 'Kmrwaldenburg', Arial, sans-serif;
+  --fontFamily: 'Geist (Variable)', Arial, sans-serif;
 }
 
 
 /* JOB BOARD HEADING */
 .ashby-job-board-heading {
-  font-family: 'Carbonot', 'Palatino Linotype', sans-serif;
+  font-family: 'Geist (Variable)', 'Palatino Linotype', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   color: #0a051d;
@@ -59,7 +42,7 @@
 }
 
 .ashby-job-board-heading-count {
-  font-family: 'Carbonot', 'Palatino Linotype', sans-serif;
+  font-family: 'Geist (Variable)', 'Palatino Linotype', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   color: #0a051d;
@@ -68,7 +51,7 @@
 
 /* FILTERS */
 .ashby-job-board-filters-label {
-  font-family: 'Kmrwaldenburg', Arial, sans-serif;
+  font-family: 'Geist (Variable)', Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   color: #494653;
@@ -93,7 +76,7 @@
 }
 
 .ashby-job-board-reset-filters-label {
-  font-family: 'Kmrwaldenburg', Arial, sans-serif;
+  font-family: 'Geist (Variable)', Arial, sans-serif;
   font-size: 0.875rem;
   color: #e10014;
 }
@@ -101,7 +84,7 @@
 
 /* DEPARTMENT HEADINGS */
 .ashby-department-heading {
-  font-family: 'Carbonot', 'Palatino Linotype', sans-serif;
+  font-family: 'Geist (Variable)', 'Palatino Linotype', sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
   color: #494653;
@@ -112,7 +95,7 @@
 }
 
 .ashby-department-heading-level {
-  font-family: 'Kmrwaldenburg', Arial, sans-serif;
+  font-family: 'Geist (Variable)', Arial, sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
   color: #494653;
@@ -148,7 +131,7 @@
 }
 
 .ashby-job-posting-brief-details {
-  font-family: 'Kmrwaldenburg', Arial, sans-serif;
+  font-family: 'Geist (Variable)', Arial, sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   color: #494653;
@@ -159,7 +142,7 @@
 
 /* INDIVIDUAL JOB POSTING PAGE */
 .ashby-job-posting-heading {
-  font-family: 'Carbonot', 'Palatino Linotype', sans-serif;
+  font-family: 'Geist (Variable)', 'Palatino Linotype', sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: #0a051d;
@@ -167,12 +150,12 @@
 }
 
 .ashby-job-posting-header {
-  font-family: 'Kmrwaldenburg', Arial, sans-serif;
+  font-family: 'Geist (Variable)', Arial, sans-serif;
   color: #494653;
 }
 
 .ashby-job-board-back-to-all-jobs-button {
-  font-family: 'Kmrwaldenburg', Arial, sans-serif;
+  font-family: 'Geist (Variable)', Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   color: #0a051d;
@@ -190,7 +173,7 @@
 
 /* APPLICATION FORM */
 .ashby-application-form-question-title {
-  font-family: 'Kmrwaldenburg', Arial, sans-serif;
+  font-family: 'Geist (Variable)', Arial, sans-serif;
   font-weight: 500;
   font-size: 0.9375rem;
   color: #0a051d;
@@ -198,20 +181,20 @@
 }
 
 .ashby-application-form-question-description {
-  font-family: 'Kmrwaldenburg', Arial, sans-serif;
+  font-family: 'Geist (Variable)', Arial, sans-serif;
   font-size: 0.875rem;
   color: #494653;
 }
 
 .ashby-application-form-section-header-title {
-  font-family: 'Carbonot', 'Palatino Linotype', sans-serif;
+  font-family: 'Geist (Variable)', 'Palatino Linotype', sans-serif;
   font-weight: 700;
   font-size: 1.125rem;
   color: #0a051d;
 }
 
 .ashby-application-form-submit-button {
-  font-family: 'Carbonot', 'Palatino Linotype', sans-serif;
+  font-family: 'Geist (Variable)', 'Palatino Linotype', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
@@ -230,11 +213,11 @@
 }
 
 .ashby-application-form-success-container {
-  font-family: 'Kmrwaldenburg', Arial, sans-serif;
+  font-family: 'Geist (Variable)', Arial, sans-serif;
   color: #0a051d;
 }
 
 .ashby-application-form-failure-container {
-  font-family: 'Kmrwaldenburg', Arial, sans-serif;
+  font-family: 'Geist (Variable)', Arial, sans-serif;
   color: #e10014;
 }
